@@ -10,8 +10,10 @@
 }
 
 body {
-    background-image: url(/ex03/img/bg-image.jpg);
+    background: linear-gradient(#6d4a27c7, #6d4a2793), url('../img/bg-image.jpg');
+     
     background-size: cover;
+    
 }
 
 #page {
@@ -57,4 +59,14 @@ h1, h2 {
 
 ul {
     padding-left: 24px;
+}
+
+footer p {
+    color: #F0E8C2;
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+footer img {
+    vertical-align: middle;
 }
