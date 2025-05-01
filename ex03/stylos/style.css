@@ -1,72 +1,85 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-:root {
-    font-family: "Alice", serif;
-    line-height: 150%;
-    color: #573A37;
-}
 
 body {
-    background: linear-gradient(#6d4a27c7, #6d4a2793), url('../img/bg-image.jpg');
-     
+    background: url('img/bg-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    
-}
-
-#page {
-    box-sizing: border-box;
-    width: 800px;
-    padding: 24px;
-    background-color: #F0E8C2;
-    border-radius: 24px;
-    margin: 48px auto;
-}
-
-img {
-    border-radius: 16px;
-}
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
 
 main {
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 24px;
+    background-color: #f0e8c2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
 }
 
-#about p + p {
-    margin-top: 12px;
+div img {
+    width: 100%;
+    max-width: 100%
 }
 
-section + section {
-    margin-top: 24px;
+.cupcake p {
+    padding: 5px;
+    color: #8B4513;
+
 }
 
-h1 {
-    line-height: 140%;
-    font-size: 40px;
-    margin-bottom: 4px;
+.ingredientes ul {
+    color: #8B4513;
+    padding-left: 30px;
+
+}
+
+
+.preparo ol {
+    padding-left: 30px;
+
+}
+
+.preparo li {
+    padding: 7px;
+    color: #8B4513;
+}
+/* Adicione ao seu CSS */
+.ingredientes h3 {
+    color: #6b2c0f;
+    margin: 15px 0 8px 10px;
+    font-size: 1.1em;
+}
+
+.ingredientes ul {
+    margin-bottom: 10px;
+    padding-left: 30px;
 }
 
 h2 {
-    font-size: 24px;
+    padding: 6px;
+    color: #8B4513;
+    font-size: 1.8rem;
 }
 
-h1, h2 {
-    color: #291B1A;
-    margin-bottom: 4px;
-    line-height: 150%;
-}
-
-ul {
-    padding-left: 24px;
-}
-
-footer p {
-    color: #F0E8C2;
+footer {
     text-align: center;
-    padding-bottom: 28px;
+    margin-bottom: 20px;
+    color: #8B4513;
 }
 
-footer img {
-    vertical-align: middle;
+
+@media (max-width: 860px) {
+    main {
+        width: 90%;
+        margin: 20px auto;
+    }
 }
+
