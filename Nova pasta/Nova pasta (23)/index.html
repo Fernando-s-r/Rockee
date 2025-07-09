@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Matrícula - Amarinho</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="form-section">
+      <div class="form-content">
+        <h1>Formulário de matrícula</h1>
+        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Amarinho.</p>
+        <form>
+          <!-- Informações da criança -->
+          <fieldset>
+            <legend>Informações da criança</legend>
+            <label>
+              Nome completo
+              <input type="text" name="childName" placeholder="Maria Luiza Alves" required />
+            </label>
+            <label>
+              Data de nascimento
+              <input type="date" name="childDOB" required />
+            </label>
+            <label>
+              Gênero
+              <select name="childGender">
+                <option>Feminino</option>
+                <option>Masculino</option>
+                <option>Outro</option>
+              </select>
+            </label>
+            <label>
+              Alergias / Observações
+              <textarea name="childNotes" rows="2" placeholder="Ex: intolerância à lactose"></textarea>
+            </label>
+          </fieldset>
+
+          <!-- Endereço residencial -->
+          <fieldset>
+            <legend>Endereço residencial</legend>
+            <label>
+              CEP
+              <input type="text" name="cep" placeholder="01234-567" required />
+            </label>
+            <label>
+              Rua / Av.
+              <input type="text" name="street" placeholder="Rua das Flores" required />
+            </label>
+            <div class="row">
+              <label>
+                Nº
+                <input type="text" name="number" placeholder="123" required />
+              </label>
+              <label>
+                Complemento
+                <input type="text" name="complement" placeholder="Apto, Bloco..." />
+              </label>
+            </div>
+            <label>
+              Cidade
+              <input type="text" name="city" placeholder="São Paulo" required />
+            </label>
+          </fieldset>
+
+          <!-- Informações do responsável -->
+          <fieldset>
+            <legend>Informações do responsável</legend>
+            <label>
+              Nome do responsável
+              <input type="text" name="parentName" placeholder="Miguel Roberto Alves" required />
+            </label>
+            <label>
+              Telefone
+              <input type="tel" name="parentPhone" placeholder="(11) 98765-4321" required />
+            </label>
+            <label>
+              E-mail
+              <input type="email" name="parentEmail" placeholder="email@exemplo.com" required />
+            </label>
+          </fieldset>
+
+          <!-- Opções de matrícula -->
+          <fieldset>
+            <legend>Opções de matrícula</legend>
+            <label class="radio">
+              <input type="radio" name="shift" value="manha" checked /> Manhã
+            </label>
+            <label class="radio">
+              <input type="radio" name="shift" value="tarde" /> Tarde
+            </label>
+          </fieldset>
+
+          <!-- Atividades extracurriculares -->
+          <fieldset>
+            <legend>Atividades extracurriculares (selecione até 3)</legend>
+            <div class="activities-grid">
+              <label class="checkbox-activity">
+                <input type="checkbox" name="activity" value="futebol" />
+                <img src="img/football.svg" alt="Ícone Futebol" />
+                <span>Futebol</span>
+              </label>
+              <label class="checkbox-activity">
+                <input type="checkbox" name="activity" value="ballet" />
+                <img src="icons/ballet.svg" alt="Ícone Ballet" />
+                <span>Ballet</span>
+              </label>
+              <label class="checkbox-activity">
+                <input type="checkbox" name="activity" value="musica" />
+                <img src="icons/musica.svg" alt="Ícone Música" />
+                <span>Música</span>
+              </label>
+              <label class="checkbox-activity">
+                <input type="checkbox" name="activity" value="yoga" />
+                <img src="icons/yoga.svg" alt="Ícone Yoga" />
+                <span>Yoga</span>
+              </label>
+              <label class="checkbox-activity">
+                <input type="checkbox" name="activity" value="volei" />
+                <img src="icons/volei.svg" alt="Ícone Vôlei" />
+                <span>Vôlei</span>
+              </label>
+              <label class="checkbox-activity">
+                <input type="checkbox" name="activity" value="atelier" />
+                <img src="icons/atelier.svg" alt="Ícone Ateliê" />
+                <span>Ateliê</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Termos e envio -->
+          <div class="terms-container">
+            <label class="checkbox-inline terms">
+              <input type="checkbox" name="terms" required />
+              <span>Declaro que li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a>.</span>
+            </label>
+          </div>
+
+          <div class="actions">
+            <button type="button" class="btn-outline">Voltar</button>
+            <button type="submit" class="btn-primary">Fazer matrícula</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="illustration-section">
+      <div class="illustration-content">
+        <img src="images/illustration.png" alt="Crianças e educadores aprendendo juntos" />
+        <h2>Porque cada momento de aprendizado conta</h2>
+        <p>Incentive seu filho hoje mesmo a explorar o mundo em um ambiente acolhedor, seguro e estimulante.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

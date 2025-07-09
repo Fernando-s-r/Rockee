@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/img/bg-image.jpg);
+    background-size: cover;
+}
+
+#page {
+    box-sizing: border-box;
+    padding: 24px;
+    width: 800px;
+    margin: auto;
+    background-color: rgb(192, 153, 120);
+    
+}
+
+img {
+    border-radius: 16px;
+}
+
+#about h1 {
+    background-size: 30px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+h2 {
+
+    padding: 10px;
+}
+

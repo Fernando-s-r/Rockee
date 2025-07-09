@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('img/macarao.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#pagi {
+    box-sizing: border-box;
+    padding: 6rem;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background-color: 	#F5DEB3;
+    border-radius: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 600px; /* tamanho máximo da imagem */
+    max-width: 100%;
+    margin: 0 auto; /* centraliza a imagem */
+    padding: 10px 0;
+    border-radius: 16px;
+}
+
+h1, h2 {
+    padding: 7px;
+    color: saddlebrown;
+}
+
+
+.ingre ul{
+    padding-left: 27px;
+    color: saddlebrown;
+}
+
+.preparo li{
+   padding: 5px;
+}
+
+
+
+.preparo ol {
+    padding-left: 27px;
+    list-style-position: inside; 
+    padding-left: 0;
+    color: saddlebrown;
+}

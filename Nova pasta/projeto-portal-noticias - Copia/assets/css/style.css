@@ -1,0 +1,225 @@
+/* ===== ESTILOS GLOBAIS ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        :root {
+            /* Paleta de Cores */
+            --azul-escuro: #1a237e;
+            --azul-medio: #3f51b5;
+            --cinza-escuro: #616161;
+            --cinza-claro: #f5f5f5;
+            --prateado: #c0c0c0;
+            
+            /* Variáveis de Layout */
+            --header-height: 80px;
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            background: 
+                linear-gradient(rgba(245, 245, 245, 0.92), rgba(255, 255, 255, 0.95)),
+                url('https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5') center/cover fixed;
+            min-height: 100vh;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: var(--azul-escuro);
+            border-bottom: 3px solid var(--prateado);
+            padding: 0 2rem;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: var(--prateado);
+            font-size: 2rem;
+            letter-spacing: -1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-weight: 600;
+        }
+
+        /* ===== NAVEGAÇÃO ===== */
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--cinza-claro);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all var(--transition-speed) ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-2px);
+        }
+
+        nav a::before {
+            content: '▹';
+            color: var(--prateado);
+            font-size: 0.8em;
+            transition: transform var(--transition-speed);
+        }
+
+        nav a:hover::before {
+            transform: rotate(90deg);
+        }
+
+        /* ===== CONTEÚDO PRINCIPAL ===== */
+        main {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(8px);
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--prateado);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        }
+
+        /* ===== ARTIGOS ===== */
+        article {
+            background: rgba(255,255,255,0.9);
+            border: 1px solid var(--prateado);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform var(--transition-speed) ease;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        article h2 {
+            color: var(--azul-escuro);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        article h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--azul-medio);
+            transition: width var(--transition-speed);
+        }
+
+        article:hover h2::after {
+            width: 100px;
+        }
+
+        article p {
+            line-height: 1.8;
+            color: var(--cinza-escuro);
+            margin: 1rem 0;
+        }
+
+        /* ===== IMAGENS ===== */
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            border: 1px solid var(--prateado);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform var(--transition-speed);
+        }
+
+        img:hover {
+            transform: scale(1.02);
+        }
+
+        /* ===== EFEITO DE PARTÍCULAS ===== */
+        .tech-particles {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    var(--prateado) 0px,
+                    var(--prateado) 1px,
+                    transparent 1px,
+                    transparent 10px
+                ),
+                repeating-linear-gradient(
+                    -45deg,
+                    var(--azul-medio) 0px,
+                    var(--azul-medio) 1px,
+                    transparent 1px,
+                    transparent 10px
+                );
+            opacity: 0.08;
+            z-index: -1;
+            animation: scan 40s linear infinite;
+        }
+
+        @keyframes scan {
+            from { background-position: 0 0; }
+            to { background-position: 0 100vh; }
+        }
+
+        /* ===== RESPONSIVIDADE ===== */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+
+            main {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            article {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 0.5rem;
+            }
+
+            article h2 {
+                font-size: 1.4rem;
+            }
+        }

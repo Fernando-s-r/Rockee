@@ -1,0 +1,140 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Debby', cursive;
+            background-image: url('img/ai-generated-8587029_1920.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            padding-top: 130px;
+        }
+
+        main {
+            width: 800px;
+            margin: auto;
+            background-color: rgb(226, 197, 159);
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .conteiner {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: burlywood;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 50px;
+        }
+
+        .item {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background-color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #654321;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        h1 {
+            color: #5a2d0c;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .cupcake, .Ingre, .preparo {
+            margin-bottom: 30px;
+        }
+
+        .cupcake img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 15px 0;
+        }
+
+        h2 {
+            color: #5a2d0c;
+            margin: 20px 0;
+            font-size: 2em;
+        }
+
+        p, li {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #4a4a4a;
+        }
+
+        .navegacao-receitas {
+            margin-top: 40px;
+            padding: 25px 0;
+            border-top: 2px dashed #8B4513;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-prev, .btn-next {
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            background-color: #8B4513;
+            color: white;
+            border: 2px solid #654321;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-prev:hover, .btn-next:hover {
+            background-color: #654321;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #5a2d0c;
+            font-size: 1.1em;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 850px) {
+            main {
+                width: 95%;
+                margin: 20px auto;
+            }
+
+            .conteiner {
+                flex-direction: column;
+                gap: 20px;
+                padding: 15px;
+            }
+
+            .btn-prev, .btn-next {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }

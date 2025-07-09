@@ -1,0 +1,68 @@
+.btn {
+    --btn-bg-color:var(--text-color-primary);
+    --btn-color: var(--bg-color)
+    border: 0;
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+
+    border-radius: .5rem;
+
+    font: var(--font-weight-medium) var(--font-weight-regular)/1.5rem var(--font-family-base);
+
+    cursor: pointer;
+
+    background: var(--btn-bg-color);
+    color: var(--bg-color);
+}
+
+.btn:hover {
+    --btn-bg-color: linear-gradient(to right, #FC4A1A, #F7B733);
+    --btn-color: var(--surface-color);
+}
+
+
+
+.btn-sm{
+    padding: .5rem 1rem;
+    font-size: var( --font-span-mobile);
+}
+
+.btn-md {
+    padding: .75rem 1.5rem;
+    font-size: var( --font-paragraph-mobile);
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+   font-size: 1.125rem;
+}
+
+.btn[aria-label] {
+
+    position: relative;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: inherit;
+        inset: 0.09375rem;
+        background: var(--bg-color);
+    }
+
+
+
+    &::after {
+        content: attr(aria-label);
+        background: var(--btn-bg-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        position: relative;
+        z-index: 1;
+    }
+}

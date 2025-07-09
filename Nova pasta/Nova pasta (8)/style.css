@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('img/potato-2760712_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    box-sizing: border-box;
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    padding: 50px;
+    background-color: #F5DEB3;
+}
+
+img {
+    display: block; 
+    max-width: 700px; 
+    border-radius: 16px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: maroon;
+    padding: 7px;
+}
+
+.ingredientes li{
+    color: maroon;
+}
+
+.ingredientes ul {
+      padding-left: 30px;
+}
+
+.cozinha {
+    padding-top: 30px;
+    
+    color: maroon;
+    
+}
+
+.cozinha li {
+    padding: 7px;
+}
+
+.cozinha ol {
+    padding-left: 30px;
+}

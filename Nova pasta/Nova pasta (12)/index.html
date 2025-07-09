@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+        }
+
+        body {
+           
+        }
+        #conteiner {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 50px;
+            background-color: burlywood;
+            padding: 20px;
+        }
+
+        .app {
+            /* width: 800px; */
+            background-color: burlywood;
+            margin: auto;
+            display: grid;
+            gap: 20px;
+            margin: 10px;
+            border-radius: 6px;
+           grid-template-columns: 2fr 5fr 1fr;
+            padding: 5px;
+        }
+        .p {
+            padding: 5px;
+            border: solid 1px;
+        }
+
+        .p a {
+            text-decoration: none;
+            color: burlywood;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+            margin-left: 50px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: burlywood;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .p:last-child a {
+          margin-left: 0; /* Remove a margem desnecessária */
+          display: block; /* Faz os links ocuparem toda a largura */
+          text-align: center;
+}
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 300px; /* Ajuste conforme necessário */
+            margin: 0 auto;
+            object-fit: cover; 
+            
+        }
+       .pp p {
+        text-align: center;
+        padding: 7px;
+       }
+       
+        a:hover {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: burlywood;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            
+        }
+        @media (max-width: 768px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+}
+    </style>
+</head>
+<body>
+    <header id="conteiner">
+        <h1>Meu site</h1>
+        <nav>
+             <a href="#">inicio</a>
+             <a href="#">contato</a>
+        </nav>
+    </header>
+
+    <main class="app">
+        <div class="p">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae unde ratione. Ipsum sit totam vitae nulla dicta. Aliquid quisquam delectus quaerat minus, fuga similique fugiat eligendi a maiores aspernatur!</p>
+
+          </div>
+          <div class="p">
+             <section class="pp">
+                 <img src="img/cenoura.jpg" alt="">
+                  <h2>Receita de bolo</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis porro voluptatum, magni perferendis earum minus aliquid voluptatibus voluptates laboriosam quisquam! Tempora itaque ex excepturi cumque aut omnis voluptates debitis quo?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis porro voluptatum, magni perferendis earum minus aliquid voluptatibus voluptates laboriosam quisquam! Tempora itaque ex excepturi cumque aut omnis voluptates debitis quo?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis porro voluptatum, magni perferendis earum minus aliquid voluptatibus voluptates laboriosam quisquam! Tempora itaque ex excepturi cumque aut omnis voluptates debitis quo?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis porro voluptatum, magni perferendis earum minus aliquid voluptatibus voluptates laboriosam quisquam! Tempora itaque ex excepturi cumque aut omnis voluptates debitis quo?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis porro voluptatum, magni perferendis earum minus aliquid voluptatibus voluptates laboriosam quisquam! Tempora itaque ex excepturi cumque aut omnis voluptates debitis quo?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis porro voluptatum, magni perferendis earum minus aliquid voluptatibus voluptates laboriosam quisquam! Tempora itaque ex excepturi cumque aut omnis voluptates debitis quo?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis porro voluptatum, magni perferendis earum minus aliquid voluptatibus voluptates laboriosam quisquam! Tempora itaque ex excepturi cumque aut omnis voluptates debitis quo?</p>
+             </section>
+
+          </div>
+          <div class="p">
+              <a href="#">contato</a> <br>
+              <a href="#">contato</a>  <br>
+              <a href="#">contato</a>  <br>
+              <a href="#">contato</a>  <br>
+              <a href="#">contato</a>  <br>
+              <a href="#">contato</a> <br>
+              <a href="#">contato</a>
+          </div>
+    </main>
+
+    <footer>
+        <p>Site criado por Fernando Reis</p>
+    </footer>
+</body>
+</html>

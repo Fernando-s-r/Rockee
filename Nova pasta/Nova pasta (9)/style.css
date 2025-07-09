@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('img/potato-2760712_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteine {
+    background-attachment: fixed;
+    background-color: burlywood;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    /* flex-direction: inherit; */
+    justify-content: space-evenly;
+ }
+
+ .item {
+    display: flex;
+    gap: 30px;
+    
+ }
+ nav a {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+ }
+ a:hover {
+    background-color: black;
+    color: white;
+ }
+
+main {
+    box-sizing: border-box;
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    padding: 50px;
+    background-color: #F5DEB3;
+}
+
+img {
+    display: block; 
+    max-width: 700px; 
+    border-radius: 16px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: maroon;
+    padding: 7px;
+}
+
+.ingredientes li{
+    color: maroon;
+}
+
+.ingredientes ul {
+      padding-left: 30px;
+}
+
+.cozinha {
+    padding-top: 30px;
+    
+    color: maroon;
+    
+}
+
+.cozinha li {
+    padding: 7px;
+}
+
+.cozinha ol {
+    padding-left: 30px;
+}
+
+div {
+    background-color: #F5DEB3;
+    width: 130px;
+    text-align: center;
+    margin: auto;
+}
+
+div a {
+    text-decoration: none;
+    color: black;
+}

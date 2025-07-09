@@ -1,0 +1,139 @@
+:root {
+            --cor-primaria: #8B4513;
+            --cor-secundaria: #DEB887;
+            --cor-texto: #333;
+            --cor-branca: #FFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto);
+        }
+
+        .cabecalho {
+            background-color: var(--cor-primaria);
+            padding: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .titulo-site {
+            color: var(--cor-branca);
+            font-size: 2rem;
+        }
+
+        .navegacao {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navegacao-link {
+            text-decoration: none;
+            color: var(--cor-branca);
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .navegacao-link:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .conteudo-principal {
+            max-width: 1500px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 5fr 1fr;
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--cor-branca);
+            padding: 1.5rem;
+            border-radius: 8px;
+            
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .receita-destaque {
+            /* text-align: center; */
+            
+        }
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+         ul {
+            list-style: none;
+         }
+        .receita-imagem {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .sidebar-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .sidebar-link {
+            text-decoration: none;
+            color: var(--cor-primaria);
+            padding: 0.8rem;
+            border: 1px solid var(--cor-primaria);
+            border-radius: 4px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-link:hover {
+            background-color: var(--cor-primaria);
+            color: var(--cor-branca);
+        }
+
+        .rodape {
+            background-color: var(--cor-primaria);
+            color: var(--cor-branca);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .conteudo-principal {
+                grid-template-columns: 1fr;
+            }
+            
+            .cabecalho {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navegacao {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .navegacao-link {
+                width: 100%;
+            }
+        }

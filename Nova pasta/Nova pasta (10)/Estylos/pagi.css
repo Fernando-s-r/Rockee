@@ -1,0 +1,26 @@
+.cupcake p{
+
+ padding: 5px;
+}
+
+.Ingre ul, .preparo ol{
+    padding-left: 24px;
+    
+}
+
+.Ingre li{
+  padding: 5px;
+}
+
+h2 {
+    padding: 5px;
+}
+
+
+.preparo li{
+  padding: 5px;
+}
+
+main {
+    border-radius: 16px;
+}

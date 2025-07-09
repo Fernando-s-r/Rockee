@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: "Alice", serif;
+    
+}
+
+body {
+    background: linear-gradient(#6d4a27c7, #6d4a2793), url('../img/bg-image.jpg');
+     
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+main {
+    box-sizing: border-box;
+    max-width: 800px;
+   
+    margin: auto;
+    padding: 24px;
+    background-color: #f0e8c2;
+    border-radius: 16px;
+   
+
+    
+}
+
+ h1, h2{
+      padding: 10px;
+      color: #291b1a;
+}
+
+ul {
+    padding-left: 24px;
+    color: #573a37;
+}
+
+p {
+    color: #573a37;
+}
+
+
+#Modopre p { 
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    color: #f0e8c2;
+    margin-top: 15px;
+}

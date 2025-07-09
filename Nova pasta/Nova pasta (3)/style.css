@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background: linear-gradient(#6d4a27c7, #6d4a2793), url('../img/bg-image.jpg') ;
+    background-size: cover;
+
+    font-family: 'Segoe UI', sans-serif;
+     
+}
+
+main {
+    box-sizing: border-box;
+    padding: 24px;
+    width: 800px;
+    margin: auto;
+    background-color: #f0e8c2;
+    border-radius: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    padding: 7px;
+    color: #6d4a27ec;
+}
+
+ul {
+    padding-left: 27px;
+    color: #6d4a27d3;
+}
+
+.cupcake p {
+    padding: 7px;
+    color: #6d4a27d3;
+}
+
+.modopre p {
+    padding: 7px;
+    color: #6d4a27d3;
+}
+.cupcake h1 {
+    transition: color 0.3s;
+}
+.cupcake h1:hover {
+    color: #4d3319;
+}
+
+.ingredi li {
+    margin-bottom: 8px;
+    list-style-type: square;
+}
+
+
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f0e8c2;
+}
+
+footer img {
+    vertical-align: middle;
+    margin: 0 4px;
+}
+@media (max-width: 860px) {
+    main {
+        width: 90%;
+        margin: 20px auto;
+    }
+}

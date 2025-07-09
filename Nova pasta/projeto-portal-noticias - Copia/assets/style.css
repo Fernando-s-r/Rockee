@@ -1,0 +1,115 @@
+/* Variáveis CSS */
+:root {
+    --azul-profundo: #0a1a3d;
+    --azul-vibrante: #00b4d8;
+    --grafite: #2d2d2d;
+    --cinza-lunar: #e0e0e0;
+    --prata-tech: #e0e0e0;
+    --azul-profundo-rgb: 10, 26, 61;
+    
+    /* Espaçamentos */
+    --gap-sm: 1rem;
+    --gap-md: 2rem;
+    --gap-lg: 3rem;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background: var(--cinza-lunar);
+    line-height: 1.6;
+}
+
+/* Header Hero */
+.hero {
+    background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(26, 35, 126, 0.85)),
+                url('../imagens/Image 07.png') center/cover;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* Navegação */
+.nav-tech {
+    display: flex;
+    gap: var(--gap-md);
+}
+
+.nav-link {
+    color: var(--prata-tech);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.1);
+}
+
+.nav-link:hover {
+    background: var(--azul-vibrante);
+    transform: translateY(-2px);
+}
+
+/* Cards Tech */
+.card-tech {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-tech:hover {
+    transform: translateY(-10px);
+}
+
+/* Galeria Interativa */
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* Efeito Matrix */
+.matrix-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.15;
+    background: linear-gradient(
+        to bottom,
+        rgba(var(--azul-profundo-rgb), 0.9) 10%,
+        transparent 90%
+    );
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-header {
+        flex-direction: column;
+    }
+    
+    .nav-tech {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Restante do CSS... (mantenha as outras seções do CSS anterior) */

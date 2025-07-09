@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+main {
+    box-sizing: border-box;
+    padding: 40px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 16px;
+    background-color: #F5DEB3;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
+}
+
+
+
+h2 {
+    padding: 10px;
+}
+
+.local p {
+    padding: 10px;
+}
+
+#locall img{
+    padding-bottom: 50px;
+}
+
+.um {
+    color: blue;
+}
+
+.dois {
+    color: blueviolet;
+}
+
+.treis {
+    color: chocolate;
+}
+
+ul {
+    padding-left: 25px;
+}
+ 
+
+.art {
+    padding: 50px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}

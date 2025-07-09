@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de receitas práticas e deliciosas, como bolo de cenoura!">
+    <title>Receitas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: burlywood;
+            
+        }
+
+        header {
+             background-color: #8b7355;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1.5rem;
+            
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .li > a {
+            text-decoration: none;
+            background-color: rgba(156, 130, 112, 0.527);
+            color: white;
+            padding: 10px 15px;
+            
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        main {
+            padding-top: 20px;
+            border-radius: 7px;
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 20px;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.37);
+            background-color: white;
+        }
+
+        .im img {
+            
+          width: 80%;
+         max-width: 600px; 
+         height: auto;
+
+            margin: 0 auto;
+            display: block;
+            background-size: cover;
+            border-radius: 5px;
+        }
+
+        ul, ol  {
+            /* padding-left: 70px; */
+             padding-left: 6rem; /* Unidade relativa */
+             margin: 1rem 0;
+        }
+
+        li {
+            padding: 5px;
+        }
+        h1{
+            font-family: 'Dancing Script', cursive;
+           font-size: 2.5em;
+           color: #ff6b6b;
+            padding-left: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        h2 {
+            font-family: 'Great Vibes', cursive;
+            padding-left: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        aside p {
+              
+              padding-left: 70px;
+              
+              
+        }
+        mark {
+              background-color: #fff3d7;
+              padding: 2px 5px;
+            }
+
+            .an a{
+                text-decoration: none;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+            .an {
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+
+       
+
+        aside p {
+            padding-bottom: 20px;
+        }
+        .redes-sociais {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.redes-sociais a {
+  color: #8b7355;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: #ff6b6b;
+}
+
+        footer {
+             
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+  main {
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: none;
+  }
+  header {
+    flex-direction: column;
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <h1>Site de Receitas 🍴</h1>
+        <nav class="li">
+              <a href="#">Inicio</a>
+              <a href="#">Receitas</a>
+              <a href="#">Contato</a>
+        </nav>
+    </header> -->
+
+    <main>
+        <section>
+            <div class="im">
+                <img src="img/cenoura.jpg" alt="Bolo de cenoura com cobertura de chocolate">
+           </div>
+                <h1>Bolo de Cenoura 🍰</h1>
+                           
+        </section>
+        <section>
+            <h2>Massa</h2>
+            <ul>
+             <li>1/2 xícara (chá) de óleo</li>
+             <li>2 xícara (chá) de cenoura picada</li>
+             <li>4 ovos</li>
+             <li>2 xícaras (chá) de açúcar</li>
+             <li>2 xícaras (chá) de farinha de trigo</li>
+             <li>1 colher (café) de fermento em pó</li>
+            </ul>
+            <h2>Cobertura</h2>
+            <ul>
+             <li>1 lata de leite condensado </li>
+             <li>1 caixinha de creme de leite </li>
+             <li>1 colher cheia de margarina </li>
+             <li>3 colheres cheias de chocolate em pó </li>
+             </ul>
+        </section>
+        <section>
+            <h2>Modo de preparo</h2>
+
+            <ol>
+           <li> Separe as claras das gemas.</li>
+            <li>Bata as claras em neve e reserve.</li>
+            <li>No liquidificador coloque a cenoura, o óleo e as gemas e bata por 5 minutos.</li>
+            <li>Em uma tigela misture a farinha de trigo, o fermento e o açúcar, misture bem.</li>
+            <li>Depois junte os ingredientes batidos, misture bem, por último junte as claras em neve.</li>
+            <li>Em uma assadeira untada leve para assar em forno médio, pré-aquecido, por aproximadamente <br>40 minutos, ou até que fure com um palito e ele saia limpo. </li>
+             </ol>
+
+
+        </section>
+
+        <aside>
+            <h2>Cobertura</h2>
+            <p><mark>Leve todos os ingredientes ao fogo e mexa até que desgrude da panela.</mark></p>
+            <div class="an">
+                <a href="index.html.html"> Anterio</a>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+  <p>Site criado por Fernando Reis</p>
+  <div class="redes-sociais">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</footer>
+</body>
+</html>
