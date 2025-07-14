@@ -1,6 +1,6 @@
 .btn {
     --btn-bg-color:var(--text-color-primary);
-    --btn-color: var(--bg-color)
+    --btn-color: var(--bg-color);
     border: 0;
    
 
@@ -22,6 +22,10 @@
 .btn:hover {
     --btn-bg-color: linear-gradient(to right, #FC4A1A, #F7B733);
     --btn-color: var(--surface-color);
+
+    -webkit-background-clip: initial;
+     background-clip: initial;
+     color: var(--bg-color);
 }
 
 
@@ -65,4 +69,18 @@
         position: relative;
         z-index: 1;
     }
+}
+
+@media (width >= 80em) {
+ 
+
+.btn-sm {
+    padding: .75rem 1.5rem;
+    font-size: var( --font-paragraph-mobile);
+}
+
+.btn-md {
+    padding: 1rem 2rem;
+   font-size: 1.125rem;
+}
 }
