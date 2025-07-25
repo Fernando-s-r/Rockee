@@ -501,7 +501,7 @@ section.gallery figcaption img {
   animation-timeline: view();
   animation-range: 100px 300px;
 }
-section.gallery figure [data-delay] {
+section.gallery figure[data-delay] {
   animation-range: 150px 350px;
 }
 figure img {
@@ -518,6 +518,7 @@ section.gallery figure img:hover {
 figure:nth-child(1) {
 grid-area: A;
 }
+
 figure:nth-child(2) {
 grid-area: B;
 }
@@ -531,6 +532,7 @@ grid-area: D;
 figure:hover figcaption {
   transform: translateY(0);
 }
+
 
 @keyframes image-appear{
    from {
