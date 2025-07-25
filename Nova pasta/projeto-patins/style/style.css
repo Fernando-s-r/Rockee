@@ -504,12 +504,13 @@ section.gallery figcaption img {
 section.gallery figure[data-delay] {
   animation-range: 150px 350px;
 }
-figure img {
-  
-  height: 25rem;
+.gallery figure img  {
+ 
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: scale 500ms;
-  
+ 
 }
 section.gallery figure img:hover {
   scale: 1.1;
@@ -518,7 +519,6 @@ section.gallery figure img:hover {
 figure:nth-child(1) {
 grid-area: A;
 }
-
 figure:nth-child(2) {
 grid-area: B;
 }
@@ -532,7 +532,6 @@ grid-area: D;
 figure:hover figcaption {
   transform: translateY(0);
 }
-
 
 @keyframes image-appear{
    from {
@@ -641,6 +640,15 @@ footer .social-links a::before {
 
 
 
+@media (max-width: 480px) {
+  h2 { 
+    font-size: 1.8rem; 
+  }
+  
+  
+}
+
+
 
 @media (max-width: 768px) {
   section.hero {
@@ -652,6 +660,15 @@ footer .social-links a::before {
 @media (hover: none) {
   .gallery figcaption {
     transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .gallery .content {
+    grid-template-areas: 
+      "A"
+      "B"
+      "C"
+      "D";
   }
 }
 
