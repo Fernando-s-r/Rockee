@@ -1,0 +1,325 @@
+/* Reset básico e variáveis de cores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-principal: #2F4F4F;
+    --verde-destaque: #2E8B57;
+    --fundo-pagina: #F5F5DC;
+    --cor-texto: #36454F;
+    --fundo-cards: #FFFFFF;
+    --header-height: 85px; /* Variável para a altura do header */
+}
+
+body {
+    background-color: var(--fundo-pagina);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: var(--fundo-cards);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: var(--header-height);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header h1 {
+    color: var(--verde-principal);
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header h1 img {
+    height: 30px;
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--verde-principal);
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--verde-destaque);
+    transition: width 0.3s ease;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+/* Botão Hambúrguer (escondido no desktop) */
+.menu-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--verde-principal);
+    cursor: pointer;
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(rgba(47, 79, 79, 0.6), rgba(47, 79, 79, 0.6)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80' ) center/cover no-repeat;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.btn-cta {
+    background-color: var(--verde-destaque);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.btn-cta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Seções Gerais */
+.sobre, .servicos, .compromisso, .natureza {
+    padding: 80px 0;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-secao h2 {
+    font-size: 2.5rem;
+    color: var(--verde-principal);
+    margin-bottom: 1rem;
+}
+
+.titulo-secao p {
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sobre ul {
+    list-style-type: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Cards de Serviços */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--fundo-cards);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.card img {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: var(--verde-principal);
+    margin-bottom: 0.5rem;
+}
+
+/* Seção Compromisso */
+.compromisso {
+    background-color: #e9e8d5;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.item {
+    background-color: var(--fundo-cards);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.item span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--verde-destaque);
+    display: block;
+}
+
+/* Seção Natureza (CTA) */
+.natureza {
+    background-color: var(--verde-principal);
+    color: white;
+    text-align: center;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: var(--verde-principal);
+    color: white;
+    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contato-info p {
+    margin-bottom: 10px;
+}
+
+.contato-info i {
+    margin-right: 10px;
+    color: var(--verde-destaque);
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--verde-destaque);
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #4a6b6b;
+    font-size: 0.9rem;
+}
+
+/* ============================================ */
+/*          ESTILOS PARA RESPONSIVIDADE         */
+/* ============================================ */
+
+@media (max-width: 768px) {
+    /* Esconde a navegação padrão e mostra o botão hambúrguer */
+    .navigation {
+        display: none; /* Escondido por padrão */
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        background-color: var(--fundo-cards);
+        
+        /* Animação */
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navigation.ativo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transform: translateX(0%);
+    }
+    
+    .navigation.ativo a {
+        font-size: 1.5rem;
+    }
+
+    .menu-hamburguer {
+        display: block; /* Mostra o botão */
+    }
+
+    /* Ajustes gerais para telas pequenas */
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .cards, .items, .footer-content {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-links {
+        margin-top: 20px;
+    }
+}
