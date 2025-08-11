@@ -5,7 +5,7 @@
 }
 
 :root {
-    --cor-01: red;
+    --cor-01: #9b2408;
     --cor-02: yellow;
     --cor-03: white;
     --cor-05: #555;
@@ -103,7 +103,7 @@ button {
     border-radius: 10px;
     border: none;
     background-color: var(--cor-01);
-    color: yellow;
+    color: var(--cor-03);
     font-weight: bold;
     margin: auto;
     margin-top: 20px;
@@ -113,7 +113,7 @@ button {
 
 button:hover {
         background-color: yellow; 
-        color: red;
+        color: #9b2408;
 }
 
 
