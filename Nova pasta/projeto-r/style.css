@@ -123,16 +123,16 @@ button:hover {
    text-align: center;
 }
 
-.iten {
+.copyright {
     padding: 10px;
 }
-.iten img {
+.contact-info img {
      vertical-align: middle; 
      height: 1.2em;
      margin-right: 10px;
 }
 
-.iten p {
+.contact-info p {
    display: inline-block;
    padding: 20px;
    
