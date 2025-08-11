@@ -13,7 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    min-height: 90vh;
 }
 
 .container {
@@ -38,8 +38,10 @@ body {
 
 .formo-grupo label {
     display: block;
-    margin: 5px;
+    margin: 10px;
     text-align: left;
+    color: #9b2408;
+    font-weight: bold;
 }
 
 button {
