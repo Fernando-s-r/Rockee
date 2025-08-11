@@ -63,9 +63,6 @@ button:hover {
     display: block;
     text-align: left;
     margin-top: 20px;
+    width: 60px;
 }
 
-.btn img {
-   
-    font-size: 2rem;
-}
