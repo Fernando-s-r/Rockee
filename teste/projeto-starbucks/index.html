@@ -1,115 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StarBucks</title>
+    <title>FsrBurger</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="line"></div>
-        <div class="container header--area">
-            <div class="header-left">
-                <a href="#"><img src="assets/images/logo.png"></a>
+     <header>
+         <div class="container">
+            <div class="logo">
+                 <a href="#">FSR <span>•</span> Burger</a>
             </div>
 
-            <div class="header-right">
-                <div class="header--search">
-                    <form>
-                       <input type="text" name="search" placeholder="Procurar">
-                       <button>
-                         <img src="assets/images/loupe.png">
-                       </button>
-                    </form>
+             <nav>
+                 <ul class="liftside">
+                     <li><a href="#">Início</a></li>
+                     <li><a href="#">Burgers</a></li>
+                     <li><a href="#">Contato</a></li>    
+                 </ul>
+                 <div class="rightside">
+                      <a href="#" class="button">Fazer pedido</a>
+                 </div>
+             </nav>
+             <div class="menu">
+                <div class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-                <div class="header--menu">
-                    <img src="assets/images/menu.png" alt="">
-                </div>
-            </div>
-        </div>
-    </header>
+             </div>
+         </div>
+     </header>
 
-    <section class="banner">
+     <section class="hero">
         <div class="container">
-           <h1>Starbucks® <br> Happy Hour</h1>
-           <p>Entraremos em contato com você na sua caixa de entrada. Ofertas de bebidas estão a caminho.</p>
-           <div class="banner--images">
-              <img src="assets/images/c1.jpg">
-              <img src="assets/images/c2.jpg">
-              <img src="assets/images/c3.jpg">
-           </div>
+            <div class="leftside">
+                 <h1>O Hamburguer mais delicioso.</h1>
+                 <p>A primeira hamburgueria virtual que você faz o pedido online e come o burger através do computador.</p>
+                 <a href="#" class="button">Fazer pedido</a>
+            </div>
+            <div class="rightside">
+                <img src="assets/images/heroBurger.png" alt="burger delicioso">
+            </div>
         </div>
-    </section>
+     </section>
 
-    <section class="area1">
-       <div class="area1--content">
-          <div class="bar"></div>
-          <h2>Quatro bebidas, um milhão de razões</h2>
-
-          <div class="area1--quote"><em>"Apenas ame a si mesmo e pronto."</em> – Lady Gaga</div>
-
-          <div class="area1--text">Lady Gaga e a Starbucks compartilham uma missão: construir um mundo mais gentil e corajoso. Por meio da Fundação Born This Way, Lady Gaga inspirou seus fãs a adotar a gentileza em suas comunidades — online e no mundo. Com a sua ajuda, podemos empoderar jovens a espalhar mais gentileza.</div>
-
-          <a href="#" class="button">saber mais</a>
-
-      </div>
-
-       <div class="area1--img1"> </div>
-
-       <div class="area1--img2"> </div>
-    </section>
-
-    <section class="area2">
-       <div class="area2--content">
-          <div class="bar"></div>
-          <h2>Apresentando o Vanilla Sweet Cream Cold Brew — doce, cremoso, gelado, ousado.</h2>
-
-          
-          <div class="area2--text">Pouco antes de servir, nosso café Starbucks® Cold Brew personalizado, de infusão lenta, é coberto com uma delicada camada de creme de baunilha caseiro que cai em cascata por toda a xícara.</div>
-
-          <a href="#" class="button">saber mais</a>
-
-      </div>
-
-       <div class="area2--img1"> </div>
-
-       <div class="area2--img2"> </div>
-    </section>
-
-    <section class="area3">
-         <div class="area3--content">
-              <h2>O novo Ultra Caramel <br> Frappuccino chegou!</h2>
-              <p class="area3--text">Parabéns por fazer isso! Isso pede caramelo. Muito caramelo. Com chantilly gelado. O novo Ultra Caramel Frappuccino chegou!</p>
-
-              <a href="#" class="button">saber mais</a>
+     <section class="search">
+         <div class="container">
+            <div class="title">Pesquise o seu <br> Hamburguer favorito! </div>
+             <div class="sides">
+                <div class="leftside">
+                    <input type="search" placeholder="Digite o nome do Burguer">
+                </div>
+                <div class="rightside">
+                    <select>
+                        <option value="">Selecionar categoria</option>
+                        <option value="burgers">Burgers</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="vegetariano">vegetariano</option>
+                        <option value="kids">Kids</option>
+                    </select>
+                </div>
+             </div>
          </div>
+     </section>
 
-         <div class="area3--img1">
-               
-         </div>
-    </section>
+     <main>
+        <div class="container">
+            <div class="products-grid">
+                <a href="#" class="product-item">
+                    <div class="warning">Promoção</div>
+                    <div class="photo">
+                        <img src="assets/images/burger1.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burger</div>
+                        <div class="product-price">R$ 25,50</div>
+                    </div>
+                </a>
 
-    <section class="area4">
-       <div class="area4--content">
-          <div class="bar"></div>
-            <h2>A gentileza começa <br> com um  Cup</h2>
+                <a href="#" class="product-item">
+                    
+                    <div class="photo">
+                        <img src="assets/images/burger2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burger</div>
+                        <div class="product-price">R$ 25,50</div>
+                    </div>
+                </a>
 
-             <p class="area4--text">Apresentando a coleção Cups of Kindness: quatro bebidas muito especiais, tão deliciosas e refrescantes quanto belas. Duas novas criações, Matcha Lemonade e Violet Drink, se juntarão a Pink Drink e Ombré Pink Drink como favoritos instantâneos do verão.</p>
-             <a href="#" class="button">saber mais</a>
-       </div>
-       <div class="area4--img1"></div>
-    </section>
+                <a href="#" class="product-item">
+                    
+                    <div class="photo">
+                        <img src="assets/images/burger3.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burger</div>
+                        <div class="product-price">R$ 25,50</div>
+                    </div>
+                </a>
 
-    <section class="area5"></section>
+                <a href="#" class="product-item">
+                    
+                    <div class="photo">
+                        <img src="assets/images/burger4.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burger</div>
+                        <div class="product-price">R$ 25,50</div>
+                    </div>
+                </a>
 
-    <footer>
-        <p>Criado por Fernando Reis</p>
-        <p>Créditos do layout para Nicepage</p>
-    </footer>
+                <a href="#" class="product-item">
+                    
+                    <div class="photo">
+                        <img src="assets/images/burger2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burger</div>
+                        <div class="product-price">R$ 25,50</div>
+                    </div>
+                </a>
+
+                <a href="#" class="product-item">
+                    
+                    <div class="photo">
+                        <img src="assets/images/burger3.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burger</div>
+                        <div class="product-price">R$ 25,50</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+     </main>
+     
+     <footer>
+        <div class="container">
+            <div class="logo">
+                 <a href="#">FSR <span>•</span> Burger</a>
+            </div>
+            <div class="copyrights">criado por Fernando Reis</div>
+        </div>
+     </footer>
 </body>
 </html>
